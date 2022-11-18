@@ -8,6 +8,7 @@ import java.util.Objects; //import the Objects class
 
 public class Challenge1 {
     public static void main(String[] args) {
+        // Execution method 1
         int lengthStr = 8;
         String input;
         Scanner sc = new Scanner(System.in);
@@ -16,7 +17,8 @@ public class Challenge1 {
         input = sc.nextLine().toLowerCase();
         String myStringRandom = randomString(lengthStr, input);
         System.out.printf("The random String  of %d characters for option %s is: %s\n", lengthStr + 2, input.toUpperCase(), myStringRandom);
-        
+
+        // Execution method 2
         System.out.println("Enter the size of the list to enter here: ");
         int lengthList = entry.nextInt();
         List<String> list = new ArrayList<>(); // declare the list of type ArrayList
@@ -31,8 +33,8 @@ public class Challenge1 {
         System.out.println("Enter the value of type string to Check from the list: ");
         String valueInput = sc.nextLine().toLowerCase();
 
-        String check = String.valueOf(checkingString(valueInput, list));
-        System.out.println(check);
+        String checkout = String.valueOf(checkingString(valueInput, list));
+        System.out.println(checkout);
 
     }
     // method to get random numbers
@@ -49,23 +51,21 @@ public class Challenge1 {
         String character = "0123456789";
         String string = "";
 
+        for (int i = 0; i < length; i ++){
+            int indexRandom = randomNumber(0, character.length() - 1);
+            char charRandom = character.charAt(indexRandom);
+            string += charRandom;
+        }
         if (typeString.equals(charA)) {
-            for (int i = 0; i < length; i++) {
-                int indexRandom = randomNumber(0, character.length() - 1);
-                char charRandom = character.charAt(indexRandom);
-                string += charRandom;
-            }
             return typeA + string;
         } else if (typeString.equals(charB)) {
-            for (int i = 0; i < length; i++) {
-                int indexRandom = randomNumber(0, character.length() - 1);
-                char charRandom = character.charAt(indexRandom);
-                string += charRandom;
-            }
-        } else {
+
+            return typeB + string;
+        }
+        else {
             return "Option Invalid";
         }
-        return typeB + string;
+
     }
     // Method that performs the check of the value in the list
     public static boolean checkingString(String valueInput, List<String> list) {
