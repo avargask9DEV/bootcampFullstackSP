@@ -1,6 +1,5 @@
 package challenge1;
-
-import java.util.concurrent.ThreadLocalRandom; // library for Generating random values
+import java.util.concurrent.ThreadLocalRandom; //library for Generating random values
 import java.util.Scanner;// library to get data by keyboard
 import java.util.ArrayList; // import the ArrayList class
 import java.util.List; //import the List class
@@ -22,7 +21,7 @@ public class Challenge1 {
         System.out.println("Enter the size of the list to enter here: ");
         int lengthList = entry.nextInt();
         List<String> list = new ArrayList<>(); // declare the list of type ArrayList
-        // enter the size of the list by data entered by keyboard
+        // enter the size of the list by data entered by keyboards
         int cont = 1;
         while (cont <= lengthList) {
             System.out.printf("Enter string type values here  %d: ", cont);
@@ -65,7 +64,6 @@ public class Challenge1 {
         else {
             return "Option Invalid";
         }
-
     }
     // Method that performs the check of the value in the list
     public static boolean checkingString(String valueInput, List<String> list) {
