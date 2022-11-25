@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="/img/favicon" type="image/x-icon">
+    <title>Portfolio AlonsoDEV</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1> {AlonsoDEV}</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">H0ME</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SKILLS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/alonso-vargas-436698b4"target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:avargask9@gmail.com"target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://github.com/avargask9DEV"><i class="fa-brands fa-github"></i></a>
+
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Welcome</p>
+                <h2>I'm<span> Alonso Vargas</span>,Full Stack Developer</h2>
+                <p class="description">
+                    I love creating new things using technology, a lover of programming. 
+                </p>
+                <a href="#portafolio">Visit my portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">About Me</p>
+                <h2>Hello, I'm <span>Ubeimar Alonso Vargas</span></h2>
+                <h3>Full Stack Developer</h3>
+            <p>
+                Currently I am self-taught in the field of web development, focusing mainly on the Backend side.
+                I am continuously learning and acquiring new skills in web development.</p>
+           <p> I'm very passionate about programming, it is a world that inspires and motivates me, I like teamwork and         contribute my knowledge to other people who want to be part of this wonderful field.
+            </p>
+
+            <a href="#">Download Cv</a>
+
+        </div>
+    </section>
+
+    <!-- SECCION S k i l ls -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">TECHNOLOGIES</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <h4>Web Site Design</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CCS</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I am currently learning about web application design and programming, both client-side (Front-end,) and server-side (Back-end).</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-java"></i></i></span>
+                <h4>Java Programming</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Backend</li>
+                    <li>Spring-boot</li>
+                    <li>ApiRest</li>
+                </ul>
+                <p>Object Paradigm, 
+                    UML system diagramming language,
+                    SQL database query language,
+                    Real knowledge of at least one programming language,
+                    Software quality techniques.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-python"></i></span>
+                <h4>Python Programming</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>Pandas</li>
+                </ul>
+                <p>I have been providing web design services with paython for 6 months, the client is very happy with the developments.</p>
+            </div>
+       
+        </div>
+    </section>
+    <!-- SECCION PROJECTS -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MY PROJECTS</h3>
+     <div class="fila">
+         <div class="proyecto">
+             <div class="overlay"></div>
+             <img src="img/work1.jpg" alt="Proyecto 1">
+             <div class="info"> 
+                 <p>Encryptor</p>
+                 <a target="_blank" class="fcc-btn" href="https://avargask9dev.github.io/Challenge_Logica_Programacion_Encriptador/">Go to project</a> 
+             </div>
+         </div>
+         <div class="proyecto">
+             <div class="overlay"></div>
+             <img src="img/work6.jpg" alt="Proyecto 2">
+             <div class="info">
+                 <p>Hangman Game</p>
+                 <a  target="_blank" class="fcc-btn" href="https://avargask9dev.github.io/Challenge_Logica_Programacion-AHORCADO/">Go to project</a>  
+             </div>
+         </div>
+         <div class="proyecto">
+             <div class="overlay"></div>
+             <img src="img/work5.jpg" alt="Proyecto 2">
+             <div class="info">
+                 <p>Blog</p>
+                 <a  target="_blank" class="fcc-btn" href="https://avargask9dev.github.io/pruabaBlog2022/">Go to project</a>  
+                 
+             </div>
+         </div>
+        </div>
+        <div class="fila">
+         <div class="proyecto">
+             <div class="overlay"></div>
+             <img src="img/work2.jpg" alt="Proyecto 1">
+             <div class="info">
+                 <p>In construction...</p>
+                 <h4>Go to project</h4>
+             </div>
+         </div>
+         <div class="proyecto">
+             <div class="overlay"></div>
+             <img src="img/work3.jpg" alt="Proyecto 2">
+             <div class="info">
+                 <p>In construction...</p>
+                 <h4>Go to project</h4>
+     
+             </div>
+         </div>
+         <div class="proyecto">
+             <div class="overlay"></div>
+             <img src="img/work4.jpg" alt="Proyecto 2">
+             <div class="info">
+                 <p>In construction...</p>
+                 <h4>Go to project</h4>
+             </div>
+         </div>
+         
+        </div>
+     
+     </section>
+    <!-- SECCTION C O N T A C T  -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contact me</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Full name *" class="input-mitad">
+                    <input type="email" placeholder="Email address" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Mail subject..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here..." class="input-full"></textarea>
+                </div>
+
+                <input  type="submit" value="Send Message" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer class="footer">
+        <p class="footer__title"><span class="logo__titulo">A</span>lonsoDEV </p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/alonso-vargas-436698b4"target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:avargask9@gmail.com"target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://github.com/avargask9DEV"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="textopie">Copyright &copy; 2022 All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
